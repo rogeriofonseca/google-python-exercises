@@ -26,7 +26,7 @@
 def donuts(count):
     # +++your code here+++
     if count < 10:
-        return 'Number of donuts: %i' % count
+        return 'Number of donuts: '+str(count)
 
     return 'Number of donuts: many'
 
