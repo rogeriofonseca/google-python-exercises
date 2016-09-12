@@ -39,7 +39,10 @@ def match_ends(words):
 # before combining them.
 def front_x(words):
     # +++your code here+++
-    listaX, listaNonX = list(filter(lambda word: word[0] == 'x',words)), list(filter(lambda word: word[0] != 'x',words))
+    filterByX = lambda word: word[0] == 'x'
+    filterWithoutX = lambda word: word[0] != 'x'
+
+    listaX, listaNonX = list(filter(filterByX,words)), list(filter(filterWithoutX, words))
     return sorted(listaX) + (sorted(listaNonX)) 
 
 # C. sort_last
