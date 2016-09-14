@@ -18,7 +18,12 @@
 # Return the resulting string.
 def verbing(s):
     # +++your code here+++
-    return
+    if len(s) > 3:
+        if s.endswith('ing'):
+            s += 'ly'
+        else:
+            s += 'ing'
+    return s
 
 
 # E. not_bad
